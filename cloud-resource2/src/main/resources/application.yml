@@ -1,0 +1,27 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/,http://localhost:8762/eureka/,http://localhost:8763/eureka/
+#server:
+#  port: 8763
+
+instance:
+  hostname: Resource  
+jwt:
+    secret: itlizeproject
+spring:
+    application:
+      name: client-resource
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        password: password
+        url: jdbc:mysql://localhost:3306/itlizeproject1?useSSL=false&characterEncoding=latin1&serverTimezone=UTC
+        username: root
+    jpa:
+        database: MYSQL
+        hibernate:
+            ddl-auto: update
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+        show-sql: true

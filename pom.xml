@@ -55,5 +55,6 @@
     	<module>eurekaserver</module>
     	<module>cloud-project</module>
     	<module>cloud-resource</module>
+    	<module>cloud-resource2</module>
     </modules>
 </project>
