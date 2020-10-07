@@ -21,7 +21,6 @@ import com.itlize.resource.entity.ProjectVO;
 
 @RestController
 @RequestMapping("/resource")
-
 public class ResourceController {
 //	@Autowired
 //    private RestTemplate restTemplate;
