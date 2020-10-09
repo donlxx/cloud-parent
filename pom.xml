@@ -56,5 +56,6 @@
     	<module>cloud-project</module>
     	<module>cloud-resource</module>
     	<module>cloud-resource2</module>
+    	<module>cloud-config</module>
     </modules>
 </project>

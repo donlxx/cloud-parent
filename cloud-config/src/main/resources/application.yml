@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/donlxx/cloud-parent.git
+          searchPaths: configRepository
+          username: donlxx94@gmail.com
+          password: not show in here
+
+         # basedir: /Users/shuyang/Dev/Itlize_Training/Micro-service/config-server/baseddir
+eureka:
+  client:
+    service-url:
+       defaultZone: http://localhost:8761/eureka/,http://localhost:8762/eureka/,http://localhost:8763/eureka/
+#      defaultZone: http://eureka1:8761/eureka/,http://eureka2:8762/eureka/
+management:
+  endpoints:
+    web:
+      expose: "*"
